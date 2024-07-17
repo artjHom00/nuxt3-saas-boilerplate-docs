@@ -1,4 +1,7 @@
-# boilerplate-docs
+# Nuxt 3 SAAS Boilerplate Documentation
+
+📄 Just a simple documentation for my [Nuxt 3 SAAS Boilerplate](https://github.com/artjHom00/nuxt3-saas-boilerplate). \
+Made on Nuxt Content & @nuxt/content-theme-docs.
 
 ## Setup
 
@@ -22,6 +25,8 @@ This will create the `dist/` directory for publishing to static hosting:
 npm run generate
 ```
 
-To preview the static generated app, run `npm run start`
+----
 
-For detailed explanation on how things work, checkout [nuxt/content](https://content.nuxtjs.org) and [@nuxt/content theme docs](https://content.nuxtjs.org/themes-docs).
+
+> Fully developed & designed by @artjhom \
+> [![Twitter URL](https://img.shields.io/twitter/url.svg?label=Follow%20artjhom&style=social&url=https%3A%2F%2Ftwitter.com%2Fartjhom)](https://twitter.com/artjhom)
