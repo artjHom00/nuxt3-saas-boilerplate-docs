@@ -1,0 +1,10 @@
+{
+  "title": "Documentation for Nuxt 3 SAAS Boilerplate",
+  "url": "",
+  "logo": {
+    "light": "/logo-light.svg",
+    "dark": "/logo-dark.svg"
+  },
+  "github": "artjHom00/nuxt3-saas-boilerplate",
+  "twitter": "artjhom"
+}
