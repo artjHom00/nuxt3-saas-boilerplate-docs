@@ -187,3 +187,6 @@ const alreadyUsing = {
 
 ## ✅ All set!
 You've made your very first fully working & selling landing page by accessing http://localhost:3000/
+
+
+<!-- MAYBE ALSO ADD DEPLOYMENT INSTRUCTION -->
