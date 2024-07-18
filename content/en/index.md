@@ -16,7 +16,7 @@ features:
 
 Follow along with the documentation to get your app up and running. Once you're done, follow this documentation to launch your first SaaS startup in a matter of days. 
 
-### Start a local server
+### Start a local server & set up environment variables
 
 1. In your terminal, run the following commands one-by-one:
 

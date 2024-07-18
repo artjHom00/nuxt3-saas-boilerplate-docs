@@ -1,14 +1,15 @@
 ---
-title: ⚡ Ship your first selling SAAS in hours
+title: ⚡ Ship your first selling SAAS in minutes
 description: ''
 position: 2
 category: ''
 ---
 
-In this article we'll set up everything and create landing page & receive payments from clients.
+In this article we'll set up everything and create landing page & start receiving payments from clients.
 
 ## Setting up the project
 
+Firstly, make sure to set up environment variables in .env file (See [instruction](/)) \
 Search for <b>"_*: "</b> in the VS Code through all files to get all the required actions for the website.
 Then search for <b>"_**: "</b> (two **) to get non-mandatory actions. 
 
@@ -131,7 +132,8 @@ const pricingPlans: PricingPlanProps[] = [{
     action: {
         title: 'Get started',
     },
-    lemonsqueezyId: 298503,
+    // **paste your product id here (create in the store, lemonsqueezy dashboard)
+    lemonsqueezyId: 0,
 }]
 
 const alreadyUsing = {
@@ -181,5 +183,7 @@ const alreadyUsing = {
 </template>
 ```
 
+> ❗ Make sure to create a product in Lemonsqueezy dashboard & replace the "lemonsqueezyId" with the actual product id
 
-
+## ✅ All set!
+You've made your very first fully working & selling landing page by accessing http://localhost:3000/
