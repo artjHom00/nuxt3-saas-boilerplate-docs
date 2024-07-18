@@ -1,5 +1,5 @@
 ---
-title: Database
+title: Supabase
 description: ''
 position: 5
 category: Features
