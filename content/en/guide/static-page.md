@@ -5,7 +5,14 @@ position: 3
 category: Guide
 ---
 
-Check the [Nuxt.js documentation](https://nuxtjs.org/guides/configuration-glossary/configuration-modules) for more information about installing and using modules in Nuxt.js.
+NuxtSAAS includes blocks & commponents to help you build pages (like a landing page) in no time.
+It also includes built-in components from [shadcn-vue](https://www.shadcn-vue.com/docs/components/) library
+
+The /components folder contains all the components.
+
+The /libs/seo.js file helps you set SEO tags to better rank on Google. Make sure to customize SEO tags.
+
+A simple landing page can done like this:
 
 ## Installation
 
