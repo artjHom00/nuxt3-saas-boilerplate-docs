@@ -48,7 +48,7 @@ To protect the page and ensure that only authenticated users can access it, we n
 
 In the newly created page file (dashboard.vue), import the auth middleware:
 
-```typescript
+```vue
 <script setup>
 import { auth } from '@/middleware/auth'
 </script>
@@ -58,7 +58,7 @@ import { auth } from '@/middleware/auth'
 
 Add the auth middleware to the definePageMeta object to protect the page.
 
-```typescript
+```vue
 <script setup>
 import { auth } from '@/middleware/auth'
 

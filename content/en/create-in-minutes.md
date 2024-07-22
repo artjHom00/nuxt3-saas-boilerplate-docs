@@ -5,23 +5,26 @@ position: 2
 category: ''
 ---
 
-In this article we'll set up everything and create landing page & start receiving payments from clients.
+In this article we'll set up everything, create landing page & start receiving payments from clients.
 
 ## Setting up the project
 
-Firstly, make sure to set up environment variables in .env file (See [instruction](/)) \
-Search for <b>"_*: "</b> in the VS Code through all files to get all the required actions for the website.
-Then search for <b>"_**: "</b> (two **) to get non-mandatory actions. 
+Firstly, make sure to clone the project & set up environment variables in **.env** file (See [instruction](/#start-a-local-server--set-up-environment-variables)) \
+Then, search for all <b>"\_*: "</b> in the VS Code through all files to get all the **required actions** for the website.
+Then search for <b>"\_**: "</b> (two *\*) to get **non-mandatory actions**.
+
+Launch the website using `npm run dev` and you're all set! ✅ \
+**Access the website at `localhost:3000/`**
 
 ## Building the landing page
-Once you've configured the app and launched it using ```npm run dev```, you can access the website on ```localhost:3000/```
-You will see a starting section:
+Once you've started the script using `npm run dev`, you will see the starting section:
 <img src="./start-section.png" class="light-img" width="1280" height="640" alt=""/>
 
 
-Then, copy the code below into your ```/pages/index.vue``` file, to create a fully functional & selling landing page
+Copy the code below into your ```/pages/index.vue``` file, to create a fully functional & selling landing page.
+Fill it with contents as you want.
 
-```js[pages/index.vue]
+```vue[pages/index.vue]
 <script setup lang="ts">
 
 import LandingHero from '@/components/blocks/landing/landing-hero/LandingHero.vue';
@@ -183,10 +186,7 @@ const alreadyUsing = {
 </template>
 ```
 
-> ❗ Make sure to create a product in Lemonsqueezy dashboard & replace the "lemonsqueezyId" with the actual product id
+> ❗ Make sure to create a new product in [Lemon Squeezy dashboard](https://app.lemonsqueezy.com/dashboard) & replace the "lemonsqueezyId" with the actual product id
 
-## ✅ All set!
-You've made your very first fully working & selling landing page by accessing http://localhost:3000/
-
-
-<!-- MAYBE ALSO ADD DEPLOYMENT INSTRUCTION -->
+## Deployment
+Use the [Deployment instruction](http://localhost:3000/guide/deployment) to deploy your project live on Vercel and start getting clients in a matter of minutes!
