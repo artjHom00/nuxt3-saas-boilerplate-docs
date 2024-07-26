@@ -38,7 +38,7 @@ In this example, the /home route is set to be prerendered, meaning it will be ge
 
 For more information on available rendering options, visit the Nuxt rendering documentation.
 
-## Creating a Protected Page
+## Creating a Protected Page (e.g. dashboard pages)
 
 ### Step 1: Create a New Page File
 Create a new file in the pages directory. For example, dashboard.vue.
