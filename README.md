@@ -1,32 +1,57 @@
-# Nuxt 3 SAAS Boilerplate Documentation
+# Docus Starter
 
-📄 Just a simple documentation for my [Nuxt 3 SAAS Boilerplate](https://github.com/artjHom00/nuxt3-saas-boilerplate). \
-Made on Nuxt Content & @nuxt/content-theme-docs.
+Starter template for [Docus](https://docus.dev).
+
+## Clone
+
+Clone the repository (using `nuxi`):
+
+```bash
+npx nuxi init -t themes/docus
+```
 
 ## Setup
 
 Install dependencies:
 
 ```bash
-npm run install
+yarn install
 ```
 
 ## Development
 
 ```bash
-npm run dev
+yarn dev
+```
+
+## Edge Side Rendering
+
+Can be deployed to Vercel Functions, Netlify Functions, AWS, and most Node-compatible environments.
+
+Look at all the available presets [here](https://v3.nuxtjs.org/guide/deploy/presets).
+
+```bash
+yarn build
 ```
 
 ## Static Generation
 
-This will create the `dist/` directory for publishing to static hosting:
+Use the `generate` command to build your application.
+
+The HTML files will be generated in the .output/public directory and ready to be deployed to any static compatible hosting.
 
 ```bash
-npm run generate
+yarn generate
 ```
 
-----
+## Preview build
 
+You might want to preview the result of your build locally, to do so, run the following command:
 
-> Fully developed & designed by @artjhom \
-> [![Twitter URL](https://img.shields.io/twitter/url.svg?label=Follow%20artjhom&style=social&url=https%3A%2F%2Ftwitter.com%2Fartjhom)](https://twitter.com/artjhom)
+```bash
+yarn preview
+```
+
+---
+
+For a detailed explanation of how things work, check out [Docus](https://docus.dev).
