@@ -1,9 +1,9 @@
 // https://github.com/nuxt-themes/docus/blob/main/nuxt.schema.ts
 export default defineAppConfig({
   docus: {
-    title: 'NuxtSAAS Documentation',
+    title: 'NuxtSAAS Docs',
     url: 'localhost:3000',
-    image: '/preview.png',
+    // image: '/preview.png',
     socials: {
       twitter: 'artjhom',
       github: 'artjHom00/nuxt3-saas-boilerplate',
