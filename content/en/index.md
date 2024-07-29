@@ -9,10 +9,10 @@ features:
   - Feature 3
 ---
 
-<img src="/bg.jpg" class="light-img" width="1280" height="640" alt=""/>
+<img src="/preview.png" class="light-img" width="1280" height="640" alt=""/>
 <img src="/preview-dark.png" class="dark-img" width="1280" height="640" alt=""/>
 
-# Welcome to NuxtSAAS 👋
+## Welcome to NuxtSAAS 👋
 
 Follow along with the documentation to get your app up and running. Once you're done, follow this documentation to launch your first SaaS startup in a matter of days. 
 
