@@ -1,53 +1,51 @@
 ---
 title: LandingSection
 description: ''
-position: 7
+position: 12
 category: Components
-features:
-  - Feature 1
-  - Feature 2
-  - Feature 3
 ---
 
-<img src="/bg.jpg" class="light-img" width="1280" height="640" alt=""/>
-<img src="/preview-dark.png" class="dark-img" width="1280" height="640" alt=""/>
+## Overview
 
-# Welcome to NuxtSAAS 👋
+The `LandingSection` component provides a flexible section layout for your landing page. It includes properties for a heading, description, feature list, image, buttons, and styling options for alignment and background.
 
-Follow along with the documentation to get your app up and running. Once you're done, follow this documentation to launch your first SaaS startup in a matter of days. 
+```typescript
+import LandingSection from '@/components/blocks/landing/landing-section/LandingSection.vue';
+```
 
-### Start a local server
+<img src="/components/landingSection.png" class="light-img" width="1280" height="640" alt=""/>
+<img src="/components/landingSection.png" class="dark-img" width="1280" height="640" alt=""/>
 
-1. In your terminal, run the following commands one-by-one:
+## Props
 
-    ```bash
-    git clone https://github.com/artjHom00/nuxt3-saas-boilerplate
-    cd nuxt3-saas-boilerplate
-    npm install
-    git remote remove origin
-    npm run dev
-    ```
+The `LandingSection` component accepts the following props
 
-    > **Note:** NuxtSAAS requires Node 18+. Type `node -v` in your terminal to check your version.
+### Optional Props
 
-2. Create a new file `.env` from `.env.example`:
+1. **heading** (`string`)
+    - **Description**: The heading text for the section.
+    - **Default**: "No heading provided in the attributes"
 
-3. Go to the [Supabase dashboard](https://supabase.com/), create a new project and paste  `SUPABASE_URL`, `SUPABASE_KEY` and `SUPABASE_POSTGRES` in your just-created `.env` file. Same with the [LemonSqueezy dashboard](https://lemonsqueezy.com) and `LEMONSQUEEZY_SECRET`, `LEMONSQUEEZY_STORE_ID` and `LEMONSQUEEZY_API_KEY` variables.
+2. **description** (`string`)
+    - **Description**: An optional description text for the section.
+    - **Example**: "This is a description for the section."
 
+3. **features** (Array of `string`)
+    - **Description**: A list of feature descriptions to be displayed in the section.
+    - **Example**: ["Feature 1", "Feature 2", "Feature 3"]
 
-4. Open [http://localhost:3000](http://localhost:3000) to see your site.
+4. **image** ([`ImageProps`](/types/image-props))
+    - **Description**: An optional image to display in the section.
 
-### NuxtJS project structure
+5. **buttons** (Array of [`ButtonProps`](/types/button-props))
+    - **Description**: An optional array of buttons to be displayed in the section.
 
-- `/pages` → Pages
-- `/server` → API endpoints
-- `/components` → Vue components
-- - `/components/blocks/landing` → Blocks for [Landing Building](/landing-building)
-- `/data` → Static data for content / layout elements
-- `/layouts` → Used layouts for pages
-- `/middlewares` -> Middlewares for the pages
-- `/public`, `/assets` → Images, assets & other stuff
+6. **filled** (`boolean`)
+    - **Description**: Determines if the section should have a filled background.
+    - **Default**: false
+    - **Example**: `true` for a filled background, `false` for a transparent background.
 
-### `app.config.ts` file
-
-It is where you configure your app's meta info
+7. **align** (`'left'` | `'center'` | `'right'`)
+    - **Description**: The alignment of the text content relative to the image.
+    - **Default**: `left`
+    - **Example**: `left` for left-aligned text, `center` for centered text, `right` for right-aligned text.

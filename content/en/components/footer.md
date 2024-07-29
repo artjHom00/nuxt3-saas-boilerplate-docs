@@ -1,53 +1,45 @@
 ---
 title: Footer
 description: ''
-position: 7
+position: 8
 category: Components
-features:
-  - Feature 1
-  - Feature 2
-  - Feature 3
 ---
 
-<img src="/bg.jpg" class="light-img" width="1280" height="640" alt=""/>
-<img src="/preview-dark.png" class="dark-img" width="1280" height="640" alt=""/>
+## Overview
 
-# Welcome to NuxtSAAS 👋
+The `Footer` component is designed to provide a customizable footer for your landing page. It includes properties for the application name, logo, subheading, sections with links, and social media icons.
 
-Follow along with the documentation to get your app up and running. Once you're done, follow this documentation to launch your first SaaS startup in a matter of days. 
+```typescript
+import Footer from '@/components/blocks/footer/Footer.vue';
+```
 
-### Start a local server
+<img src="/components/footer.png" class="light-img" width="1280" height="640" alt=""/>
+<img src="/components/footer.png" class="dark-img" width="1280" height="640" alt=""/>
 
-1. In your terminal, run the following commands one-by-one:
+## Props
 
-    ```bash
-    git clone https://github.com/artjHom00/nuxt3-saas-boilerplate
-    cd nuxt3-saas-boilerplate
-    npm install
-    git remote remove origin
-    npm run dev
-    ```
+The `Footer` component accepts the following props
 
-    > **Note:** NuxtSAAS requires Node 18+. Type `node -v` in your terminal to check your version.
+### Required Props
 
-2. Create a new file `.env` from `.env.example`:
+1. **appName** (`string`)
+    - **Description**: The name of the application.
+    - **Default**: `app.config.ts` -> `appName`
 
-3. Go to the [Supabase dashboard](https://supabase.com/), create a new project and paste  `SUPABASE_URL`, `SUPABASE_KEY` and `SUPABASE_POSTGRES` in your just-created `.env` file. Same with the [LemonSqueezy dashboard](https://lemonsqueezy.com) and `LEMONSQUEEZY_SECRET`, `LEMONSQUEEZY_STORE_ID` and `LEMONSQUEEZY_API_KEY` variables.
+2. **sections** (Array of [`SectionProps`](/types/section-props))
+    - **Description**: An array of objects defining the sections in the footer.
 
+### Optional Props
 
-4. Open [http://localhost:3000](http://localhost:3000) to see your site.
+1. **appLogo** (`string` | `null`)
+    - **Description**: The URL of the application logo.
+    - **Default**: `app.config.ts` -> `appLogo`
+    - **Example**: `/logo.png`
 
-### NuxtJS project structure
+2. **subheading** (`string` | `null`)
+    - **Description**: An optional subheading for the footer.
+    - **Default**: `null`
+    - **Example**: `"Your trusted partner"`
 
-- `/pages` → Pages
-- `/server` → API endpoints
-- `/components` → Vue components
-- - `/components/blocks/landing` → Blocks for [Landing Building](/landing-building)
-- `/data` → Static data for content / layout elements
-- `/layouts` → Used layouts for pages
-- `/middlewares` -> Middlewares for the pages
-- `/public`, `/assets` → Images, assets & other stuff
-
-### `app.config.ts` file
-
-It is where you configure your app's meta info
+3. **socials** ([`FooterSocialsProps`](/types/footer-socials-props) | `null`)
+    - **Description**: An optional object defining the social media links.

@@ -189,4 +189,4 @@ const alreadyUsing = {
 > ❗ Make sure to create a new product in [Lemon Squeezy dashboard](https://app.lemonsqueezy.com/dashboard) & replace the "lemonsqueezyId" with the actual product id
 
 ## Deployment
-Use the [Deployment instruction](http://localhost:3000/guide/deployment) to deploy your project live on Vercel and start getting clients in a matter of minutes!
+Use the [Deployment instruction](/guide/one-click-deployment) to deploy your project live on Vercel and start getting clients in a matter of minutes!

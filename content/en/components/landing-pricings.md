@@ -1,53 +1,26 @@
 ---
 title: LandingPricings
 description: ''
-position: 7
+position: 11
 category: Components
-features:
-  - Feature 1
-  - Feature 2
-  - Feature 3
 ---
 
-<img src="/bg.jpg" class="light-img" width="1280" height="640" alt=""/>
-<img src="/preview-dark.png" class="dark-img" width="1280" height="640" alt=""/>
+## Overview
 
-# Welcome to NuxtSAAS 👋
+The `LandingPricings` component displays pricing plans in a responsive grid layout. Each plan includes a heading, subheading, pricing details, features list, and an action button. The component supports dynamic grid column counts based on the number of pricing plans and includes a default action for each plan if not provided.
 
-Follow along with the documentation to get your app up and running. Once you're done, follow this documentation to launch your first SaaS startup in a matter of days. 
+```typescript
+import LandingPricings from '@/components/blocks/landing/landing-pricings/LandingPricings.vue';
+```
 
-### Start a local server
+<img src="/components/landingPricings.png" class="light-img" width="1280" height="640" alt=""/>
+<img src="/components/landingPricings.png" class="dark-img" width="1280" height="640" alt=""/>
 
-1. In your terminal, run the following commands one-by-one:
+## Props
 
-    ```bash
-    git clone https://github.com/artjHom00/nuxt3-saas-boilerplate
-    cd nuxt3-saas-boilerplate
-    npm install
-    git remote remove origin
-    npm run dev
-    ```
+The `LandingPricings` component accepts the following props
 
-    > **Note:** NuxtSAAS requires Node 18+. Type `node -v` in your terminal to check your version.
+### Required Props
 
-2. Create a new file `.env` from `.env.example`:
-
-3. Go to the [Supabase dashboard](https://supabase.com/), create a new project and paste  `SUPABASE_URL`, `SUPABASE_KEY` and `SUPABASE_POSTGRES` in your just-created `.env` file. Same with the [LemonSqueezy dashboard](https://lemonsqueezy.com) and `LEMONSQUEEZY_SECRET`, `LEMONSQUEEZY_STORE_ID` and `LEMONSQUEEZY_API_KEY` variables.
-
-
-4. Open [http://localhost:3000](http://localhost:3000) to see your site.
-
-### NuxtJS project structure
-
-- `/pages` → Pages
-- `/server` → API endpoints
-- `/components` → Vue components
-- - `/components/blocks/landing` → Blocks for [Landing Building](/landing-building)
-- `/data` → Static data for content / layout elements
-- `/layouts` → Used layouts for pages
-- `/middlewares` -> Middlewares for the pages
-- `/public`, `/assets` → Images, assets & other stuff
-
-### `app.config.ts` file
-
-It is where you configure your app's meta info
+1. **pricingPlans** (Array of [`PricingPlanProps`](/types/pricing-plan-props))
+    - **Description**: An array of objects defining the pricing plans to be displayed.

@@ -3,51 +3,52 @@ title: Header
 description: ''
 position: 7
 category: Components
-features:
-  - Feature 1
-  - Feature 2
-  - Feature 3
 ---
 
-<img src="/bg.jpg" class="light-img" width="1280" height="640" alt=""/>
-<img src="/preview-dark.png" class="dark-img" width="1280" height="640" alt=""/>
+## Overview
 
-# Welcome to NuxtSAAS 👋
+The `Header` component is designed to provide a customizable header for your landing page. It includes properties for the application name, logo, navigation links, buttons, and an optional announcement section.
 
-Follow along with the documentation to get your app up and running. Once you're done, follow this documentation to launch your first SaaS startup in a matter of days. 
+```typescript
+import Header from '@/components/blocks/header/Header.vue';
+```
 
-### Start a local server
-
-1. In your terminal, run the following commands one-by-one:
-
-    ```bash
-    git clone https://github.com/artjHom00/nuxt3-saas-boilerplate
-    cd nuxt3-saas-boilerplate
-    npm install
-    git remote remove origin
-    npm run dev
-    ```
-
-    > **Note:** NuxtSAAS requires Node 18+. Type `node -v` in your terminal to check your version.
-
-2. Create a new file `.env` from `.env.example`:
-
-3. Go to the [Supabase dashboard](https://supabase.com/), create a new project and paste  `SUPABASE_URL`, `SUPABASE_KEY` and `SUPABASE_POSTGRES` in your just-created `.env` file. Same with the [LemonSqueezy dashboard](https://lemonsqueezy.com) and `LEMONSQUEEZY_SECRET`, `LEMONSQUEEZY_STORE_ID` and `LEMONSQUEEZY_API_KEY` variables.
+<img src="/components/header.png" class="light-img" width="1280" height="640" alt=""/>
+<img src="/components/header.png" class="dark-img" width="1280" height="640" alt=""/>
 
 
-4. Open [http://localhost:3000](http://localhost:3000) to see your site.
+## Props
 
-### NuxtJS project structure
+The `Header` component accepts the following props
 
-- `/pages` → Pages
-- `/server` → API endpoints
-- `/components` → Vue components
-- - `/components/blocks/landing` → Blocks for [Landing Building](/landing-building)
-- `/data` → Static data for content / layout elements
-- `/layouts` → Used layouts for pages
-- `/middlewares` -> Middlewares for the pages
-- `/public`, `/assets` → Images, assets & other stuff
+### Required Props
 
-### `app.config.ts` file
+1. **appName** (`string`)
+    - **Description**: The name of the application.
+    - **Default**: `app.config.ts` -> `appName`
 
-It is where you configure your app's meta info
+2. **links** (Array of [`LinkProps`](/types/link-props))
+    - **Description**: An array of objects defining the navigation links.
+
+### Optional Props
+
+1. **appLogo** (`string` | `null`)
+    - **Description**: The URL of the application logo.
+    - **Default**: `app.config.ts` -> `appLogo`
+    - **Example**: `/logo.png"`
+
+2. **buttons** (Array of [`ButtonProps`](/types/button-props))
+    - **Description**: An array of objects defining the buttons to be displayed in the header.
+
+3. **announcement** (`object`)
+    - **Description**: An optional announcement section to be displayed in the header.
+    - **Properties**:
+        - **title** (`string`)
+            - **Description**: The title of the announcement.
+            - **Example**: `"New Feature Released!"`
+        - **backgroundClass** (`string`)
+            - **Description**: A CSS class to style the background of the announcement.
+            - **Example**: `"bg-red-500"`
+        - **link** (`string`)
+            - **Description**: A URL for more details about the announcement.
+            - **Example**: `"https://example.com/new-feature"`

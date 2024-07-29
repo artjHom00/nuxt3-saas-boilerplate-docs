@@ -9,7 +9,9 @@ To give a user access to your service, you can either integrate external API to 
 
 ## How it works
 
-After client purchases on the website (subscription plan / one time payment) he will gain access to his own personal dashboard on your website. You can integrate your solution to the dashboard using REST API. 
+After a client makes a purchase on your website (either a subscription plan or a one-time payment), they will have access to sign up on your website using the email they entered during the LemonSqueezy checkout process. In their dashboard, they can access the solutions you provide. 
+
+You can integrate your solution into users' dashboard using the REST API and a **bit 🤏 of programming**
 
 ### Set up dashboard's layout and integrate API
 
@@ -21,7 +23,7 @@ After that you can integrate your solution using REST API.
 
 ### Add more pages to the dashboard
 
-In case you need more pages in users' dashboards, go to `data/dashboard-sidenav.ts` and add more object data in there.
+In case you need more pages in users' dashboards, go to `data/dashboard-sidenav.ts` and add more object data (navigation menu items) in there.
 Then, add new page in `views/` folder. More info on [how to create new pages on the website](/guide/static-page)
 ```typescript[dashboard-sidenav.ts]
 [
@@ -40,4 +42,4 @@ Then, add new page in `views/` folder. More info on [how to create new pages on 
 ]
 ```
 
-After that you will see a new tab appearing on the aside navigation menu.
+> For an example of API integration, you can refer [here](/examples/integrating-the-api)
