@@ -2,6 +2,7 @@
 export default defineAppConfig({
   docus: {
     title: 'NuxtSAAS Documentation',
+    url: 'localhost:3000',
     image: '/preview.png',
     socials: {
       twitter: 'artjhom',
@@ -17,7 +18,8 @@ export default defineAppConfig({
       // fluid: true
     },
     header: {
-      logo: true,
+      // logo: true,
+      title: 'NuxtSAAS',
       showLinkIcon: true,
       exclude: [],
       // fluid: true
