@@ -31,3 +31,10 @@ const pricingPlans: PricingPlanProps[] = [{
     lemonsqueezyId: 000000,
 }]
 ```
+
+#### Step 4: Add webhooks
+In your store dashboard, to `Settings` -> `Webhooks`. From there create a new webhook, setting `Callback URL` as `%YOUR_HOST%/api/webhook`. \
+Create a signing secret and put it in `.env` file under the `LEMONSQUEEZY_SECRET` key. \
+Mark 3 events as checked: `order_created`, `subscription_cancelled`, `subscription_expired`. 
+
+<img src="/lemonsqueezy-webhook.png" class="light-img" width="1280" height="640" alt=""/>
