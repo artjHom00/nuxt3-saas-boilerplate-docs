@@ -18,7 +18,7 @@ export type FooterSocialsProps = {
 
 The `FooterSocialsProps` type accepts the following props
 
-### Required Props
+#### Required Props
 
 1. **twitter** (`string`)
     - **Description**: link to twitter

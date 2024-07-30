@@ -14,6 +14,6 @@ import LandingTestimonials from '@/components/blocks/landing/landing-testimonial
 
 The LandingTestimonials component accepts the following props
 
-### Required Props
+#### Required Props
 1. **testimonials** (Array of [`TestimonialProps`](/types/testimonial-props))
     - **Description**: An array of testimonials to be displayed. Each testimonial includes user details, content, and an optional image.

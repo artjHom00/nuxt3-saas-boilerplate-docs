@@ -8,10 +8,10 @@ Most themes will have options for primary, secondary, and accent colors, among o
 
 <img src="/theming.png" class="light-img" width="1280" height="640" alt=""/>
 
-#### Copy the Theme Code
+####  Copy the Theme Code
 Once you're satisfied with your customizations, copy the generated CSS code. This code contains all the styles needed to apply your chosen theme.
 
-#### Replace the Contents of `tailwind.css`
+####  Replace the Contents of `tailwind.css`
 Now, you need to apply the copied CSS code to your website.
 
 Open the file located at `/assets/css/tailwind.css`.
@@ -20,5 +20,5 @@ Save the file.
 
 <img src="/theming-code.png" class="light-img" width="1280" height="640" alt=""/>
 
-#### Apply the Changes
+####  Apply the Changes
 To see the changes on your website, ensure that your development server is running. If it is not, start it by running the appropriate command for your project (e.g., npm run dev for a Nuxt.js project).

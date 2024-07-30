@@ -6,10 +6,10 @@ We support integrating a live support chat system to your website in couple clic
 
 ## Installation
 
-### Step 1: Get started
+#### Step 1: Get started
 First, create an account on any of your chosen services. After that - get to install the service. They will provide you with the embed code, that you need to copy.
 
-### Step 2: Integrate with the website
+#### Step 2: Integrate with the website
 Once you've done configuring the live chat widget - open the `app.config.ts` and paste the code you've copied in `supportChat.embed` object key. 
 > Don't forget to set the `isEnabled` setting as `true`
 

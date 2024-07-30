@@ -14,7 +14,7 @@ import LandingSection from '@/components/blocks/landing/landing-section/LandingS
 
 The `LandingSection` component accepts the following props
 
-### Optional Props
+#### Optional Props
 
 1. **heading** (`string`)
     - **Description**: The heading text for the section.

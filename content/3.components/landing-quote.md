@@ -14,7 +14,7 @@ import LandingQuote from '@/components/blocks/landing/landing-quote/LandingQuote
 
 The `LandingQuote` component accepts the following props
 
-### Required Props
+#### Required Props
 
 1. **content** (`string`)
     - **Description**: The text content of the quote.
@@ -22,7 +22,7 @@ The `LandingQuote` component accepts the following props
 2. **author** (`string`)
     - **Description**: The name of the person who authored the quote.
 
-### Optional Props
+#### Optional Props
 
 1. **avatar** ([`ImageProps`](/types/image-props))
     - **Description**: An optional avatar image for the author.

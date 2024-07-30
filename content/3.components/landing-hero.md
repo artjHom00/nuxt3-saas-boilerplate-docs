@@ -15,7 +15,7 @@ import LandingHero from '@/components/blocks/landing/landing-hero/LandingHero.vu
 The `LandingHero` component accepts the following props.
 > Note: you can use \***Text**\* markdown for text styling in `heading` and `description` properties
 
-### Optional Props
+#### Optional Props
 
 1. **heading** (`Object`)
     - **Description**: The main heading of the hero section.

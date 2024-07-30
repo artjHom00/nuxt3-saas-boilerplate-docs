@@ -15,7 +15,7 @@ import LandingLogos from '@/components/blocks/landing/landing-logos/LandingLogos
 
 The `LandingLogos` component accepts the following props
 
-### Required Props
+#### Required Props
 
 1. **`logos`** (Array of [`LogoProps`](/types/logo-props))
     - **Description**: An array of logo objects to be displayed.

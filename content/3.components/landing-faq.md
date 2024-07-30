@@ -13,7 +13,7 @@ import LandingFAQ from '@/components/blocks/landing/landing-faq/LandingFAQ.vue';
 
 The LandingFAQ component accepts the following props
 
-### Optional Props
+#### Optional Props
 1. **heading** (`string`)
     - **Description**: The main heading for the FAQ section.
 

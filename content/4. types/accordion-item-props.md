@@ -16,7 +16,7 @@ export type AccordionItemProps = {
 
 The `AccordionItemProps` type accepts the following props
 
-### Required Props
+#### Required Props
 
 1. **value** (`string`)
     - **Description**: id of a question

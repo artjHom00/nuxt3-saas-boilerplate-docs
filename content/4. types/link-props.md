@@ -16,7 +16,7 @@ export type LinkProps = {
 
 The `LinkProps` type accepts the following props
 
-### Required Props
+#### Required Props
 
 1. **title** (`string`)
 

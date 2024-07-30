@@ -14,7 +14,7 @@ import LandingPricings from '@/components/blocks/landing/landing-pricings/Landin
 
 The `LandingPricings` component accepts the following props
 
-### Required Props
+#### Required Props
 
 1. **pricingPlans** (Array of [`PricingPlanProps`](/types/pricing-plan-props))
     - **Description**: An array of objects defining the pricing plans to be displayed.

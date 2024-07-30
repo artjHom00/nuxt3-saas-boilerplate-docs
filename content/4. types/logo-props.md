@@ -17,7 +17,7 @@ export type LogoProps = {
 
 The `LogoProps` type accepts the following props
 
-### Required Props
+#### Required Props
 
 1. **type** (`svg` | `img`)
     - **Description**: format of a logo

@@ -14,7 +14,7 @@ import LandingCTA from '@/components/blocks/landing/landing-cta/LandingCTA.vue';
 
 The `LandingCTA` component accepts the following props
 
-### Required Props
+#### Required Props
 
 1. **heading** (`string`)
     - **Description**: The main heading of the call-to-action section.

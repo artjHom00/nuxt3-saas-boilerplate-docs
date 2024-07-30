@@ -5,7 +5,7 @@ We use [Supabase](https://supabase.com/) for authentication and cloud database s
 
 ## Setting up Supabase
 
-### Step 1: Authentication
+#### Step 1: Authentication
 
 Go to [Supabase](https://supabase.com/) and get started by signing in or creating a new account. After that, go to your dashboard & create a **"New Project"**.
 
@@ -15,7 +15,7 @@ After project creation, go to **"Project Settings"** tab in aside menu. From the
 
 <img src="/supabase-api-credentials.png" class="light-img" width="1280" height="640" alt=""/>
 
-### Step 2: Database
+#### Step 2: Database
 Go to **"Project Settings"** tab in aside menu. From there, go to **"Database"** and copy the **Connection string**. Paste it into `.env` file, replacing the `[YOUR-PASSWORD]` part.
 
 

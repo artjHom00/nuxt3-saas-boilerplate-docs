@@ -24,7 +24,7 @@ export interface ButtonProps extends Props {
 The `ButtonProps` type accepts the following props
 > Besides of these properties, it also accepts all the properties from [**shadcn-vue Button Component**](https://www.shadcn-vue.com/docs/components/button)
 
-### Required Props
+#### Required Props
 
 1. **title** (`string`)
     - **Description**: The text displayed on the button.

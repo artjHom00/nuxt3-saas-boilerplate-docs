@@ -9,14 +9,14 @@ After a client makes a purchase on your website (either a subscription plan or a
 
 You can integrate your solution into users' dashboard using the REST API and a **bit 🤏 of programming**
 
-### Set up dashboard's layout and integrate API
+#### Set up dashboard's layout and integrate API
 
 Go to `dashboard/index.vue` and after the **"_*:"** comment add your own layout for main dashboard page.
 After that you can integrate your solution using REST API.
 
 <img src="/dashboard.png" class="light-img" width="1280" height="640" alt=""/>
 
-### Add more pages to the dashboard
+#### Add more pages to the dashboard
 
 In case you need more pages in users' dashboards, go to `data/dashboard-sidenav.ts` and add more object data (navigation menu items) in there.
 Then, add new page in `views/` folder. More info on [how to create new pages on the website](/guide/static-page)

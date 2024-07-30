@@ -4,12 +4,12 @@ In this guide, you will learn how to set up server-side rendering for better SEO
 
 ## Creating a page
 
-### Step 1: Create a New Page File
+#### Step 1: Create a New Page File
 
 1. Create a new file in the `pages` directory of your Nuxt project. For example, `home.vue`.
 2. This file will be accessible at the route `/home`.
 
-### Step 2: Set Up Server-Side Rendering (SSR)
+#### Step 2: Set Up Server-Side Rendering (SSR)
 
 To optimize the page for SEO purposes, we need to configure server-side rendering for this route.
 
@@ -35,10 +35,10 @@ For more information on available rendering options, visit the Nuxt rendering do
 
 ## Creating a Protected Page (e.g. dashboard pages)
 
-### Step 1: Create a New Page File
+#### Step 1: Create a New Page File
 Create a new file in the pages directory. For example, dashboard.vue.
 
-### Step 2: Import the Auth Middleware
+#### Step 2: Import the Auth Middleware
 To protect the page and ensure that only authenticated users can access it, we need to use the auth middleware.
 
 In the newly created page file (dashboard.vue), import the auth middleware:
@@ -49,7 +49,7 @@ import { auth } from '@/middleware/auth'
 </script>
 ```
 
-### Step 3: Define Page Meta with Middleware
+#### Step 3: Define Page Meta with Middleware
 
 Add the auth middleware to the definePageMeta object to protect the page.
 

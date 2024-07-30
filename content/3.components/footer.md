@@ -14,7 +14,7 @@ import Footer from '@/components/blocks/footer/Footer.vue';
 
 The `Footer` component accepts the following props
 
-### Required Props
+#### Required Props
 
 1. **appName** (`string`)
     - **Description**: The name of the application.
@@ -23,7 +23,7 @@ The `Footer` component accepts the following props
 2. **sections** (Array of [`SectionProps`](/types/section-props))
     - **Description**: An array of objects defining the sections in the footer.
 
-### Optional Props
+#### Optional Props
 
 1. **appLogo** (`string` | `null`)
     - **Description**: The URL of the application logo.
