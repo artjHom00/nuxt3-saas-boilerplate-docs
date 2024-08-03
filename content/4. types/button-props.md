@@ -29,7 +29,7 @@ The `ButtonProps` type accepts the following props
 1. **title** (`string`)
     - **Description**: The text displayed on the button.
 2. **icon** (`Object`)
-    - **Description**: Configuration for an optional icon to display on the button.
+    - **Description**: Configuration for an optional icon to display on the button. [Icons library](https://icones.js.org/)
     - **Properties**:
         - **name** (`string`)
             - **Description**: The name of the icon to display.

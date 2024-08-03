@@ -6,7 +6,7 @@ Read more about LemonSqueezy here: [Documentation](https://docs.lemonsqueezy.com
 ## Get started
 
 ####  Step 1: Setting up a store
-Go to [LemonSqueezy](https://lemonsqueezy.com/) and get started by signing in or creating a new account. After that, go to your dashboard & create a new store there.
+Go to [LemonSqueezy](https://lemonsqueezy.com/) and get started by signing in or creating a new account. After that, go to your dashboard & create a new store there. Fill in `LEMONSQUEEZY_STORE_ID` and `LEMONSQUEEZY_API_KEY` in `.env` file to integrate LemonSqueezy with your project.
 
 ####  Step 2: Create products
 To accept payments on your website - create your very first product under the `Store` -> `Products` tab. Enter required data, such as **name, description, pricing type & other**.

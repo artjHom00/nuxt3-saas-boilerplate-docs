@@ -5,34 +5,34 @@ export default defineTheme({
     black: '#101010',
     primary: {
       '50': {
-        value: '#E8F5E9'
+        value: '#ede9fe'
       },
       '100': {
-        value: '#C8E6C9'
+        value: '#ddd6fe'
       },
       '200': {
-        value: '#A5D6A7'
+        value: '#c4b5fd'
       },
       '300': {
-        value: '#81C784'
+        value: '#a78bfa'
       },
       '400': {
-        value: '#66BB6A'
+        value: '#7c3aed'
       },
       '500': {
-        value: '#32C237'
+        value: '#6d28d9'
       },
       '600': {
-        value: '#4CAF50'
+        value: '#5b21b6'
       },
       '700': {
-        value: '#388E3C'
+        value: '#4c1d95'
       },
       '800': {
-        value: '#2E7D32'
+        value: '#3f1c81'
       },
       '900': {
-        value: '#1B5E20'
+        value: '#312e81'
       }
     }
   }
