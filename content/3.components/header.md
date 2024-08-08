@@ -45,3 +45,7 @@ The `Header` component accepts the following props
         - **link** (`string`)
             - **Description**: A URL for more details about the announcement.
             - **Example**: `"https://example.com/new-feature"`
+
+4. **showColorModeSwitch** (`boolean`)
+    - **Description**: An optional dark/light mode switcher
+    - **Default**: `true`

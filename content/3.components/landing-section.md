@@ -33,7 +33,7 @@ The `LandingSection` component accepts the following props
 5. **buttons** (Array of [`ButtonProps`](/types/button-props))
     - **Description**: An optional array of buttons to be displayed in the section.
 
-6. **secondBlock** ([`ImageProps`](/types/image-props) | Array of [`FeatureProps`](/types/feature-props))
+6. **secondBlock** ([`ImageProps`](/types/image-props) | Array of [`FeaturesProps`](/types/features-props))
     - **Description**: Definition of second block. Could be either an image OR a block with features
     - **Default**: Placeholder image
 

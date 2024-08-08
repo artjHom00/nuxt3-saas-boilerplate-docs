@@ -28,7 +28,7 @@ The `ButtonProps` type accepts the following props
 
 1. **title** (`string`)
     - **Description**: The text displayed on the button.
-2. **icon** (`Object`)
+2. **icon** (`object`)
     - **Description**: Configuration for an optional icon to display on the button. [Icons library](https://icones.js.org/)
     - **Properties**:
         - **name** (`string`)
@@ -38,7 +38,7 @@ The `ButtonProps` type accepts the following props
         - **size** (`string`)
             - **Description**: The size of the icon.
 
-3. **link** (`Object`)
+3. **link** (`object`)
     - **Description**: Configuration for an optional link associated with the button.
     - **Properties**:
         - **url** (`string`)

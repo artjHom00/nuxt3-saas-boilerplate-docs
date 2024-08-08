@@ -29,3 +29,7 @@ The `LandingQuote` component accepts the following props
 
 2. **asideInfo** (`string`)
     - **Description**: Additional information about the author displayed next to their name.
+
+3. **filled** (`string`)
+    - **Description**: Fill the section with background
+    - **Default**: `true`

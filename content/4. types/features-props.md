@@ -1,11 +1,11 @@
-# FeatureProps
+# FeaturesProps
 
 ```typescript
-import { type FeatureProps} from '@/components/blocks/types.ts';
+import { type FeaturesProps} from '@/components/blocks/types.ts';
 ```
 
 ```typescript
-export type FeatureProps = {
+export type FeaturesProps = {
     icon?: string,
     heading: string,
     description: string
@@ -14,7 +14,7 @@ export type FeatureProps = {
 
 ## Props
 
-The `FeatureProps` type accepts the following props
+The `FeaturesProps` type accepts the following props
 
 #### Required Props
 

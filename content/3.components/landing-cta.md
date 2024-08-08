@@ -24,3 +24,7 @@ The `LandingCTA` component accepts the following props
 
 3. **buttons** (Array of [`ButtonProps`](/types/button-props))
     - **Description**: An array of objects defining the buttons to be displayed in the call-to-action section.
+
+4. **filled** (`boolean`)
+    - **Description**: Fill the section with background
+    - **Default**: `true`

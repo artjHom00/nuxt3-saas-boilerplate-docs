@@ -44,34 +44,49 @@ To protect the page and ensure that only authenticated users can access it, we n
 In the newly created page file (dashboard.vue), import the auth middleware:
 
 ```vue
-<script setup>
-import { auth } from '@/middleware/auth'
+<script setup lang="ts">
+import { isAuthorized } from '@/middleware/isAuthorized'
 </script>
 ```
 
 #### Step 3: Define Page Meta with Middleware
 
-Add the auth middleware to the definePageMeta object to protect the page.
+Add the `isAuthorized` middleware to the `definePageMeta` object to protect the page.
 
 ```vue
-<script setup>
-import { auth } from '@/middleware/auth'
+<script setup lang="ts">
+import { isAuthorized } from '@/middleware/isAuthorized'
+import { useUserStore } from '@/store/UserStore';
 
 definePageMeta({
-  layout: false,
-  middleware: [auth]
+    layout: 'dashboard',
+    activeTab: 'home',
+    middleware: [isAuthorized]
 })
+
+const userStore: any = useUserStore()
+
+const user = userStore.userData
+
 </script>
 
 <template>
-  <div>
-    <h1>Dashboard</h1>
-    <p>Welcome to the protected dashboard page.</p>
-  </div>
+
+    <!-- checking if user has a subscription -->
+    <div v-if="user.supabase.subscription" class="">
+        <!-- _*: add the contents for your user's index dashboard page  -->
+    </div>
+    <div v-else>
+        <h1 class="mb-4 text-xl font-bold">Your subscription expired, renew it.</h1>
+        <NuxtLink to="/#pricings">
+            <Button variant="outline">Go to home page</Button>
+        </NuxtLink>
+    </div>
+
 </template>
 ```
 
-Now, the `dashboard` page is protected, and users must be authenticated to access it.
+Now, the `dashboard` page is protected, users must be authenticated and have a subscription to access it.
 
 ## Conclusion
 By following these steps, you can create new static and protected pages in your NuxtSAAS project. Static pages are optimized for SEO with server-side rendering, while protected pages ensure only authenticated users can access them. This approach enhances both the performance and security of your Nuxt application.
