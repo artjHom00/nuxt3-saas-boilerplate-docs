@@ -1,6 +1,6 @@
 # SEO & Blog
 
-We use [nuxtseo](https://nuxtseo.com/) to handle all the SEO used on our website. It's a bundle of hand-crafted Nuxt Modules that will make search engines recognize you better.
+We use [`nuxtseo`](https://nuxtseo.com/) to handle all the SEO used on our website. It's a bundle of hand-crafted Nuxt Modules that will make search engines recognize you better.
 
 ## Set up SEO on your website
 

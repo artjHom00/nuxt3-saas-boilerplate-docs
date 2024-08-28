@@ -18,7 +18,11 @@ After project creation, go to **"Project Settings"** tab in aside menu. From the
 #### Step 2: Database
 Go to **"Project Settings"** tab in aside menu. From there, go to **"Database"** and copy the **Connection string**. Paste it into `.env` file, replacing the `[YOUR-PASSWORD]` part.
 
-
 <img src="/supabase-postgre.png" class="light-img" width="1280" height="640" alt=""/>
+
+#### Step 3: URL & SMTP Configuration
+In **"Project Settings"** tab click on **"Authentication"** and under the `SMTP Settings` set SMTP credentials of your email.
+It will allow Supabase to send email confirmation messages & much more.
+<img src="/supabase-smtp.png" class="light-img" width="1280" height="640" alt=""/>
 
 > All set! You've set up Supabase for your project. Now you're able to authenticate & sign up using Supabase.
